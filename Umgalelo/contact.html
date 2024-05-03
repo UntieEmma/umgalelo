@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umgalelo Africa - Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html">Umgalelo Africa</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Have a question or inquiry? Get in touch with us!</p>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><strong>Email:</strong> Palesamaqakatsa8@gmail.com</p>
+                    <p><strong>Phone:</strong> +266 57684631</p>
+                    <p><strong>Address:</strong> Pitso,Ground 1010 , Square Masery, Chancy</p>
+                </div>
+                <div class="social-media">
+                    <h3>Connect with Us</h3>
+                        
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Umgalelo Africa.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f8f9fa; 
+        color: #333;
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    .contact-info,
+.social-media {
+    margin-top: 50px;
+    text-align: center; 
+}
+
+.contact-info h3,
+.social-media h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #5cb85c; 
+    animation: fadeInUp 1s ease-out;
+}
+
+.contact-info p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333; 
+}
+
+.social-media ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; 
+}
+
+.social-media ul li {
+    margin-right: 20px;
+}
+
+.social-media ul li:last-child {
+    margin-right: 0;
+}
+
+.social-media ul li a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-media ul li a:hover {
+    color: #ffcc00;
+}
+
+    
+    header {
+        background-color: #5cb85c; 
+        color: #fff;
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+        animation: fadeInDown 1s ease-out; 
+    }
+    
+    @keyframes fadeInDown {
+        0% {
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    form {
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+        }
+
+        label {
+            margin-bottom: 10px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button.btn {
+            background-color: #007bff; 
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button.btn:hover {
+            background-color: #0056b3; 
+        }    
+    
+    header h1 {
+        font-size: 40px;
+        font-weight: bold;
+        text-transform: uppercase; 
+        animation: fadeInLeft 1s ease-out; 
+    }
+    
+    @keyframes fadeInLeft {
+        0% {
+            opacity: 0;
+            transform: translateX(-50px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+    }
+    
+    nav ul li {
+        margin-left: 20px;
+        animation: fadeInRight 1s ease-out; 
+    }
+    
+    @keyframes fadeInRight {
+        0% {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        transition: color 0.3s ease;
+        font-weight: bold;
+    }
+    
+    nav ul li a:hover {
+        color: #ffcc00; 
+    }
+    
+    main {
+        padding: 50px 0;
+    }
+    
+    h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        color: #5cb85c; 
+        animation: fadeInUp 1s ease-out;
+    }
+    
+    @keyframes fadeInUp {
+        0% {
+            opacity: 0;
+            transform: translateY(50px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    p {
+        font-size: 18px;
+        margin-bottom: 20px;
+        animation: fadeInUp 1s ease-out; 
+    }
+    
+    .btn {
+        display: inline-block;
+        background-color: #ffcc00;
+        color: #5cb85c; 
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+        font-weight: bold;
+        animation: fadeInUp 1s ease-out;
+    }
+    
+    .btn:hover {
+        background-color: #d8ab00; 
+    }
+    
+    footer {
+        background-color: #34495e; 
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+        animation: fadeInUp 1s ease-out; 
+    
+    }
+    
+    footer p {
+        font-size: 14px;
+    }
+    
+    
+    </style>
